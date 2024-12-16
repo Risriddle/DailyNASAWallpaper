@@ -1,3 +1,4 @@
+
 import os
 import requests
 from dotenv import load_dotenv
@@ -13,7 +14,7 @@ def is_connected():
     except OSError:
         return False
 
-load_dotenv(dotenv_path='/home/risriddle/Workstation/Projects/Python/setWallpaper/.env')
+load_dotenv(dotenv_path='/home/username/ProjectFolder/.env')
 
 # Check for internet connection up to 15 minutes (900 seconds)
 for _ in range(90):
@@ -42,6 +43,7 @@ for _ in range(90):
                 image_response = requests.get(image_url)
                 if image_response.status_code == 200:
                     
+                    folder_path = "/home/username/Pictures/NASA_APOD"
 
                     os.makedirs(folder_path, exist_ok=True)
 

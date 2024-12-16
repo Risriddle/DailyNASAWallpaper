@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to the timestamp file
-TIMESTAMP_FILE="/home/risriddle/Workstation/Projects/Python/setWallpaper/last_run_timestamp.txt"
+TIMESTAMP_FILE="/home/username/ProjectFolderName/last_run_timestamp.txt"
 
 # Check if the script has already run today
 if [ -f "$TIMESTAMP_FILE" ]; then
@@ -18,7 +18,7 @@ if [ -f "$TIMESTAMP_FILE" ]; then
 fi
 
 # Run the script
-/home/risriddle/Workstation/Projects/Python/setWallpaper/set_wallpaper_on_login.sh
+/home/username/ProjectFolderName/set_wallpaper_on_login.sh
 
 # Update the timestamp
 date +%Y-%m-%d > "$TIMESTAMP_FILE"
